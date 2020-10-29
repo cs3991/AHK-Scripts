@@ -1,6 +1,6 @@
 # AHK-Scripts
 
-A set of useful functions written with AutoHotKey to automate frequently done tasks or add custom shortcuts. Works on Windows.
+A set of useful functions written with AutoHotKey that automates frequently done tasks or add custom shortcuts. Works on Windows.
 
 ## List of customs Hotkeys and HotStrings
 
@@ -18,8 +18,8 @@ A set of useful functions written with AutoHotKey to automate frequently done ta
 - Create a new file named... with `Ctrl` + `Alt` + `n` when in file explorer
 
 ## Limitations
-You can use and edit this file as you want but these shortcuts are designed for my use and will not work properly 
-with every program or every users. You will probably have to rewrite some of of them.
+You can use and edit all files as you want but these shortcuts are designed for my use and will not work properly 
+with every programs or every users. You will probably have to rewrite some of them before using them.
 
 ## Credit
 Some functions are from [Taran Van Hemert](https://github.com/TaranVH/2nd-keyboard)
