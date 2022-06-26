@@ -1,7 +1,7 @@
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 is_not_in_game(){
-	return, (!winActive("Overwatch")&!WinActive("Minecraft")&!WinActive("ahk_exe r5apex.exe")&!WinActive("The Cycle")&!WinActive("VALORANT")&!WinActive("ahk_exe Hyperscape.exe"))
+	return, (!winActive("Overwatch")&!WinActive("Minecraft")&!WinActive("ahk_exe r5apex.exe")&!WinActive("The Cycle")&!WinActive("ahk_exe VALORANT-Win64-Shipping.exe")&!WinActive("ahk_exe Hyperscape.exe")&!winActive("Among Us")&!winActive("Counter-Strike: Global Offensive"))
 }
 
 RemoveToolTip:

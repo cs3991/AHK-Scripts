@@ -14,6 +14,7 @@ RControl & F12:: suspend
 
 
 
+
 ;---- Hotstrings : autocomplete mail address ----
 
 :*:sim@::simardced31@gmail.com
@@ -23,89 +24,92 @@ RControl & F12:: suspend
 ; --- Greek letters
 
 
-;:o:\alpha::{asc 945}
-:o:\alpha::α
-;:o:\beta::{asc 946}
-;:o:\beta::{Alt Down}{Numpad2}{Numpad2}{Numpad5}{Alt Up}
-:o:\beta::ß
-;:o:\gamma::{asc 947}
-:o:\gamma::γ
-;:o:\Gamma::{asc 915}
-:o:\Gamma::Γ
-;:o:\delta::{asc 948}
-:o:\delta::δ
-;:o:\Delta::{asc 916}
-:o:\Delta::Δ
-;:o:\epsilon::{asc 949}
-:o:\epsilon::ε
-;:o:\zeta::{asc 950}
-:o:\zeta::ζ
-;:o:\eta::{asc 951}
-:o:\eta::η
-;:o:\theta::{asc 952}
-:o:\theta::θ
-:o:\Theta::Θ
-;:o:\kappa::{asc 954}
-:o:\iota::ι
-:o:\Iota::Ι
-:o:\kappa::κ
-;:o:\lambda::{asc 955}
-:o:\lambda::λ
-:o:\Lambda::Λ
-;:o:\mu::{asc 956}
-:o:\mu::�]
-:o:\nu::ν
-;:o:\xi::{asc 958}
-:o:\xi::ξ
-:o:\xi::Ξ
-;:o:\sigma::{asc 963}
-:o:\sigma::σ
-;:o:\Sigma::{asc 931}
-:o:\Sigma::Σ
-;:o:\pi::{asc 960}
-:o:\pi::π
-:o:\Pi::Π
-;:o:\rho::{asc 961}
-:o:\rho::ρ
-;:o:\tau::{asc 964}
-:o:\tau::τ
-;:o:\phi::{asc 966}
-:o:\phi::φ
-;:o:\Phi::{asc 934}
-:o:\Phi::Φ
-;:o:\chi::{asc 967}
-:o:\chi::χ
-;:o:\psi::{asc 968}
-:o:\psi::ψ
-;:o:\Psi::{asc 936}
-:o:\Psi::Ψ
-;:o:\omega::{asc 969}
-:o:\omega::ω
-;:o:\Omega::{asc 937} 
-:o:\Omega::Ω
+;:o:/alpha::{asc 945}
+:o:/alpha::α
+;:o:/beta::{asc 946}
+;:o:/beta::{Alt Down}{Numpad2}{Numpad2}{Numpad5}{Alt Up}
+:o:/beta::ß
+;:o:/gamma::{asc 947}
+:o:/gamma::γ
+;:o:/Gamma::{asc 915}
+:o:/Gamma::Γ
+;:o:/delta::{asc 948}
+:o:/delta::δ
+;:o:/Delta::{asc 916}
+:o:/Delta::Δ
+;:o:/epsilon::{asc 949}
+:o:/epsilon::ε
+;:o:/zeta::{asc 950}
+:o:/zeta::ζ
+;:o:/eta::{asc 951}
+:o:/eta::η
+;:o:/theta::{asc 952}
+:o:/theta::θ
+:o:/Theta::Θ
+;:o:/kappa::{asc 954}
+:o:/iota::ι
+:o:/Iota::Ι
+:o:/kappa::κ
+;:o:/lambda::{asc 955}
+:o:/lambda::λ
+:o:/Lambda::Λ
+;:o:/mu::{asc 956}
+:o:/mu::�]
+:o:/nu::ν
+;:o:/xi::{asc 958}
+:o:/xi::ξ
+:o:/xi::Ξ
+;:o:/sigma::{asc 963}
+:o:/sigma::σ
+;:o:/Sigma::{asc 931}
+:o:/Sigma::Σ
+;:o:/pi::{asc 960}
+:o:/pi::π
+:o:/Pi::Π
+;:o:/rho::{asc 961}
+:o:/rho::ρ
+;:o:/tau::{asc 964}
+:o:/tau::τ
+;:o:/phi::{asc 966}
+:o:/phi::φ
+;:o:/Phi::{asc 934}
+:o:/Phi::Φ
+;:o:/chi::{asc 967}
+:o:/chi::χ
+;:o:/psi::{asc 968}
+:o:/psi::ψ
+;:o:/Psi::{asc 936}
+:o:/Psi::Ψ
+;:o:/omega::{asc 969}
+:o:/omega::ω
+;:o:/Omega::{asc 937} 
+:o:/Omega::Ω
 
 ; ----- Maths ---------
-:o:\A::∀
-:o:\pderiv::∂
-:o:\existe::∃
-:o:\vide::∅
-:o:\in::∈
-:o:\!in::∉
-:o:\times::×
-:o:\inf::∞
-:o:\=>::⇒
-:o:\<=>::⇔
-:o:\<=::⇐
-:o:\sqrt::√
+:o:/A::∀
+:o:/pderiv::∂
+:o:/existe::∃
+:o:/vide::∅
+:o:/in::∈
+:o:/!in::∉
+:o:/times::×
+:o:/inf::∞
+:o:/!=::≠
+:o:/=>::⇒
+:o:/<=>::⇔
+:o:/<=::⇐
+:o:/sqrt::√
 
 
 ; ----- General hotstrings ------
 ::bcp::beaucoup
 ::Bcp::Beaucoup
-::...::…
-::\iexcl::¡
-::\iquest::¿
-::" :"::" :"
+::ajd::aujourd'hui
+::Ajd::Aujourd'hui
+
+;::...::…
+::/iexcl::¡
+::/iquest::¿
 
 ;---- Accents ---
 
@@ -138,26 +142,53 @@ return
 RControl & RShift::AltTab  ; Hold down right-control then press right-shift repeatedly to move forward.
 RControl & Enter::ShiftAltTab  ; Without even having to release right-control, press Enter to reverse direction.
 
-
 WheelDown::AltTab
 WheelUp::ShiftAltTab
+²::ShiftAltTab
 
 ;---- Media ----
+
+DetectHiddenWindows, On
+
+; Get the HWND of the Spotify main window.
+getSpotifyHwnd() {
+	WinGet, spotifyHwnd, ID, ahk_exe spotify.exe
+	; We need the app's third top level window, so get next twice.
+	;spotifyHwnd := DllCall("GetWindow", "uint", spotifyHwnd, "uint", 2)
+	;spotifyHwnd := DllCall("GetWindow", "uint", spotifyHwnd, "uint", 2)
+	Return spotifyHwnd
+}
+
+; Send a key to Spotify.
+spotifyKey(key) {
+	spotifyHwnd := getSpotifyHwnd()
+	; Chromium ignores keys when it isn't focused.
+	; Focus the document window without bringing the app to the foreground.
+	ControlFocus, Chrome_RenderWidgetHostHWND1, ahk_id %spotifyHwnd%
+	ControlSend, , %key%, ahk_id %spotifyHwnd%
+	Return
+}
+
 ^Numpad4::
 F13::
-Send {Media_Play_Pause}
+spotifyKey("{Space}")
 return
 
 ^NumpadMult::
 F13 & RButton::
-Send {Media_Next}
+spotifyKey("^{Right}")
 return
 
 ^Numpad6::
 F13 & LButton::
-Send {Media_Prev}
+spotifyKey("^{Left}")
 return
 
+
+; ShareX color capture :
+#+c::
+send, ^!+{F13}
+return
 ; ----- Brightness adjust with Win + Wheel -----
 
 #WheelDown::BrightnessSetter.SetBrightness(-7)
@@ -167,16 +198,8 @@ return
 
 ;---- Raccourcis clavier pour lancer des programmes -----
 
-^!R::
-run, D:\simar\Documents\Applis\Everything\Everything.exe
-return
-
-^!M::
-run, thunderbird.exe
-return
-
-^!F::
-run, C:\Program Files\Mozilla Firefox\firefox.exe
+#S::
+send, ^!r
 return
 
 
@@ -187,7 +210,7 @@ return
 IfWinNotExist, ahk_class MozillaWindowClass
 	Run, firefox.exe
 if WinActive("ahk_exe firefox.exe")
-	Send ^{tab}
+	Send ^t
 else{
 	WinActivatebottom ahk_exe firefox.exe
 		;sometimes winactivate is not enough. the window is brought to the foreground, but not put into FOCUS.
@@ -208,34 +231,57 @@ else
 return
 
 !"::      ; Discord
-If(!WinExist(ahk_exe Discord.exe)){
-	Run, C:\Users\simar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk
-}
-if(!winActive(ahk_exe Discord.exe)){
-	WinActivate, ahk_exe Discord.exe
+if(!winActive("ahk_exe Discord.exe")){
+	
+	if WinExist("ahk_exe Discord.exe")
+		WinActivate, ahk_exe Discord.exe
+	else {
+		IfNotExist, Discord.png
+			tt("Error: Your file either doesn't exist or isn't in this location.", 1)
+		CoordMode, Pixel, Screen
+		CoordMode, Mouse, Screen
+		ImageSearch, x, y, 1626, 1046, 1708, 1070, *2 Discord.png
+		if ErrorLevel {
+			run, % "C:\Users\simar\AppData\Local\Discord\Update.exe --processStart Discord.exe"
+		}
+		else {
+		;tt(x . ", " . y, 3)
+			MouseGetPos, XMouse, Ymouse
+			BlockInput, MouseMove
+			Click, %x%, %y%
+			BlockInput, MouseMoveOff
+			MouseMove, %Xmouse%, %Ymouse% 
+			CoordMode, Pixel, Relative
+			CoordMode, Mouse, Relative
+		}
+	}
+} else {
+	send, ^i
 }
 return
 
 
-!'::     ; Configurable	
-KeyWait, ', T1
-if(ErrorLevel){
-	global shortcut_1_id
-	WinGet, shortcut_1_id, ID, A
-	tt("Configured", 1)
-}
-else{
-	WinActivate, shortcut_1_id
-	tt("Activated", 1)
-}
-KeyWait, '
-return
-
+/*
+	!'::     ; Configurable	(not working yet)
+	KeyWait, ', T1
+	if(ErrorLevel){
+		global shortcut_1_id
+		WinGet, shortcut_1_id, ID, A
+		tt("Configured", 1)
+	}
+	else{
+		WinActivate, shortcut_1_id
+		tt("Activated", 1)
+	}
+	KeyWait, '
+	return
+	
+*/
 
 
 ;---- Record Key remapping ----
 ^+F22::
-SendInput, {F21}
+SendInput, {F15}
 return
 
 
@@ -246,8 +292,8 @@ Rcontrol::Send {F21}
 
 ;------ Hotkeys to desactivate while in game --------
 #if, is_not_in_game()
-	
-; ----- alt to activate window -----
+
+; ----- alt to activate window under mouse -----
 Alt & AppsKey::Return
 ~Alt::
 MouseGetPos, Xmouse, Ymouse, window_under_mouse
@@ -287,7 +333,7 @@ return
 
 
 
-;---- Fermer appli avec un clic du bouton du milieu dans la taskbar ----
+;---- Close window with middle mouse button in the taskbar ----
 
 ShouldActivateMButton() {
 	MouseGetPos, xpos, ypos, , ControlUnderMouse
@@ -304,7 +350,9 @@ if (ShouldActivateMButton()){
 	Send, {Enter}
 }
 else {
-	Send, {MButton}
+	Send, {MButton down}
+	KeyWait, MButton
+	Send, {MButton up}
 }
 return
 
@@ -322,11 +370,11 @@ return
 ;return
 
 
-;---- copie chemin d'accès à un fichier avec ctrl shift c ----
+;---- Copy path to a file with ctrl shift c in file explorer ----
 
 
 #IfWinActive ahk_class CabinetWClass ; If Windows Explorer window is active
-	
+
 ^+C:: 
 SendInput, !^+C
 SendInput, ^c
@@ -334,8 +382,9 @@ Sleep 100
 Clipboard := Clipboard
 Return
 
-; ---- Ouvrir avec Notepad++ ------
+; ---- Open any file with Notepad++ in file explorer ------
 ^w::
+old_clip := Clipboard
 SendInput, ^c
 Sleep 100
 Clipboard := clipboard
@@ -343,30 +392,40 @@ file_name := clipboard
 file_directory := RegExReplace(file_name, "(.*)\\[^\\]*", "$1")
 file_name := RegExReplace(file_name, ".*\\([^\\]*)", "$1")
 Run, "C:\Program Files (x86)\Notepad++\notepad++.exe" "%file_directory%\%file_name%" 
+Clipboard := old_clip
 return
 
-; --- New file ---
+; --- Create a new file named... ---
 ^!n::
-SendInput, !^+C
+old_clip := Clipboard
+Clipboard := "" ; Empty the clipboard
+Send, !^+C
 ClipWait, 2
-FullPath := Clipboard
-InputBox, UserInput, New File (example: foo.txt), , ,400, 100
+if ErrorLevel
+{
+    tt("The attempt to copy text onto the clipboard failed.", 1)
+    return
+}
+InputBox, UserInput, New File in %Clipboard%, , ,600, 100
 if ErrorLevel ; cancel
 {
-	tt("Erreur", 1)
+	tt("Canceled", 1)
 	return
 }
 ; success! output file with user input
 else
 {
-	FileAppend, ,% FullPath . "\" . UserInput
+	FileAppend, ,% Clipboard . "\" . UserInput
 	if ErrorLevel 
-		tt("Erreur", 1)
+		tt("Erreur de création du fichier", 1)
 }
+
+Clipboard := old_clip
 return
 
+
 #IfWinActive, ahk_exe Spotify.exe
-	!s::
+!s::
 WinGetTitle, Query, A
 StringReplace, Query, Query, `r`n, %A_Space%, All 
 StringReplace, Query, Query, %A_Space%, `%20, All
@@ -376,12 +435,19 @@ run, http://www.google.com/search?hl=fr&q=%Query%`%20lyrics
 return
 
 #IfWinActive, Among Us
-	z::w
-	q::a
+z::w
+q::a
+XButton2::F20
+XButton1::F22
+
 
 #IfWinActive
-	
 
+
+; Se connecter au réseau oejab
+^Numpad0::
+run, curl "http://10.33.76.1:8090/login.xml" --data-raw "mode=191&username=simacedr&password=kgekuxfh&a=1627399330584&producttype=0" -verbose
+return 
 
 FindToolBar(ByRef XScrollbar, ByRef YtopScrollbar, ByRef YbotScrollbar) {
 	
