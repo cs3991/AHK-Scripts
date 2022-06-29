@@ -1,4 +1,5 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#SingleInstance
 ;#Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -242,7 +243,7 @@ if(!winActive("ahk_exe Discord.exe")){
 		CoordMode, Mouse, Screen
 		ImageSearch, x, y, 1626, 1046, 1708, 1070, *2 Discord.png
 		if ErrorLevel {
-			run, % "C:\Users\simar\AppData\Local\Discord\Update.exe --processStart Discord.exe"
+			run, % "C:\Users\" A_username "\AppData\Local\Discord\Update.exe --processStart Discord.exe"
 		}
 		else {
 		;tt(x . ", " . y, 3)
