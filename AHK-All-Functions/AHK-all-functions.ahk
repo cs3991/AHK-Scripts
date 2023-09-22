@@ -186,15 +186,23 @@ return
 
 
 ; ShareX color capture :
-#+c::
-send, ^!+{F13}
-return
+; #+c::
+; send, ^!+{F13}
+; return
+
+
 ; ----- Brightness adjust with Win + Wheel -----
 
-#WheelDown::BrightnessSetter.SetBrightness(-7)
+<#WheelDown::BrightnessSetter.SetBrightness(-7)
 
-#WheelUp::BrightnessSetter.SetBrightness(7)
+<#WheelUp::BrightnessSetter.SetBrightness(7)
 
+; Powertoys Run instead ot Start menu when press windows key
+LWin up::return
+
+LWin::
+send, #{F19}
+return
 
 ;---- Raccourcis clavier pour lancer des programmes -----
 
@@ -434,20 +442,6 @@ Query := Trim(Query)
 run, http://www.google.com/search?hl=fr&q=%Query%`%20lyrics
 return
 
-#IfWinActive, Among Us
-z::w
-q::a
-XButton2::F20
-XButton1::F22
-
-
-#IfWinActive
-
-
-; Se connecter au réseau oejab
-^Numpad0::
-run, curl "http://10.33.76.1:8090/login.xml" --data-raw "mode=191&username=simacedr&password=kgekuxfh&a=1627399330584&producttype=0" -verbose
-return 
 
 FindToolBar(ByRef XScrollbar, ByRef YtopScrollbar, ByRef YbotScrollbar) {
 	

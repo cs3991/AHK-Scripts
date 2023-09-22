@@ -19,7 +19,7 @@ class BrightnessSetter {
 		}
 	}
 
-	SetBrightness(increment, jump := False, showOSD := True, autoDcOrAc := -1, ptrAnotherScheme := 0)
+	SetBrightness(increment, jump := False, showOSD := False, autoDcOrAc := -1, ptrAnotherScheme := 0)
 	{
 		static PowerGetActiveScheme := DllCall("GetProcAddress", "Ptr", BrightnessSetter.hPowrprofMod, "AStr", "PowerGetActiveScheme", "Ptr")
 			  ,PowerSetActiveScheme := DllCall("GetProcAddress", "Ptr", BrightnessSetter.hPowrprofMod, "AStr", "PowerSetActiveScheme", "Ptr")
